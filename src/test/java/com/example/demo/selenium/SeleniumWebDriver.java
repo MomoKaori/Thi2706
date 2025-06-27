@@ -19,9 +19,24 @@ public class SeleniumWebDriver {
     void testSteps() throws InterruptedException {
         webDriver.get("https://www.vietjetair.com/vi/ve-may-bay/bay-dang-cap-boss-gia-chi-eco-uu-dai-20-ngay-20-hang-thang/?utm_source=google-vj-sg&utm_medium=cpc&utm_campaign=pmax_singaporesunbird2025_ci_perfmax_0125intflt-sale20_promo-destn-sgp-skyboss-kv_sgpawo2024_cpa_ob&gad_source=1&gclid=Cj0KCQiAkoe9BhDYARIsAH85cDORe2krBlFPX0WLX2b8-jbIkCWMIKBWK8_gIojxLNRwUvz25GcCcnEaAk54EALw_wcB");
         webDriver.findElement(By.xpath("//*[@id=\"ldr-accept_cookie_policy\"]/div/div[2]/div/div/div[2]/button/span[1]/h5")).click();
+
         webDriver.findElement(By.xpath("//*[@id=\"input-departure\"]")).click();
         webDriver.findElement(By.xpath("//*[@id=\"origin-Vietnam\"]/div[2]/div/div/div/div/div[2]/div[1]")).click();
+
+        webDriver.findElement(By.xpath("//*[@id=\"input-departure-2\"]")).click();
+        webDriver.findElement(By.xpath("//*[@id=\"destination-Vietnam\"]/div[2]/div/div/div/div/div[1]/div[2]")).click();
+
+
+        webDriver.findElement(By.xpath("//*[@id=\"input-passenger-mb\"]")).click();
+        webDriver.findElement(By.xpath("//*[@id=\"adults_add\"]/span[1]/svg/path")).click();
+        webDriver.findElement(By.xpath("//*[@id=\"flexCheckDefault\"]")).click();
+        webDriver.findElement(By.xpath("//*[@id=\"search_flights\"]/span[1]")).click();
+
+        Thread.sleep(3000);
+        webDriver.quit();
     }
+
+
 
 
 
